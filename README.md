@@ -28,14 +28,14 @@ Step 2: Enable the Phar Extension
 
 1. Login via Putty or whatever flavor you like
 2. Navigate to ~/ (cd ~/)
-3. Create the folder ~/.php (mkdir .php)
-4. Create the file ~./.php/phprc (nano phprc)
+3. Create the folder ~/.php/5.4 (mkdir -p .php/5.4)
+4. Create the file ~./.php/5.4/phprc (nano .php/5.4/phprc)
 5. Pop these jewels into the file on seperate lines
  > extension = phar.so<br />
  > suhosin.executor.include.whitelist = phar
 
 6. Save the file and exit (CTRL+O then CTRL+X)
-
+7. Verify that when you type the following, you get Phar as the output (php -m | grep Phar)
 
 Step 3: Hurray!
 -------------------------
