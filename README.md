@@ -17,8 +17,8 @@ Step 1: Running PHP 5.4 (or 5.3) in CLI (Command Line Interface)
 -------------------------
 
 1. Login via SSH (if you are not logged in already)
-2. Navigate to ~/ (`cd ~/`)
-3. Create or edit the existing file (`nano .bash_profile`)
+2. Navigate to ~/ (`$ cd ~/`)
+3. Create or edit the existing file (`$ nano .bash_profile`)
 4. On a new line copy and paste this code
   > export PATH=/usr/local/php54/bin:$PATH
 
@@ -30,7 +30,7 @@ Step 2: Enable the Phar Extension
 -------------------------
 
 1. Create the folder ~/.php (`$ mkdir .php`)
-3. Create the file ~./.php/phprc (`nano .php/phprc`)
+3. Create the file ~./.php/phprc (`$ nano .php/phprc`)
 3. Enter this code into the file on separate lines
  > extension = phar.so<br />
  > suhosin.executor.include.whitelist = phar
@@ -41,8 +41,8 @@ Step 2: Enable the Phar Extension
 
 Step 3: Hurray!
 -------------------------
-1. After you've completed steps 1 and 2, log out of SSH and then log back in. Run the command **php -v** or if that does not work for
-  you run **php --version** and it should say that it's running PHP 5.4 CLI.
+1. After you've completed steps 1 and 2, log out of SSH and then log back in. Run the command `$ php -v` or if that does not work for
+  you run `$ php --version` and it should say that it's running PHP 5.4 CLI.
 
   It should look something like this:
 > PHP 5.4.11 (cli) (built: Feb 12 2013 19:02:05)<br />
@@ -51,8 +51,8 @@ Step 3: Hurray!
 
   If not, then you've messed up somewhere along the line.
 
-2. Now you can run the following command in the directory you want to use Composer in (go to the directory first them run this command)
- > curl -s https://getcomposer.org/installer | php
+2. Now you can run the following command in the directory you want to use Composer in (go to the directory first them run this command)  
+  `$ curl -s https://getcomposer.org/installer | php`
 3. You should see some installation success messages; this is good!  
   If you see the following error:
   > \#!/usr/bin/env php  
@@ -69,12 +69,12 @@ Step 3: Hurray!
     $ mv phprc 5.4/phprc
     ````
 
-  (or, if you're using PHP 5.3, that would be `mkdir 5.3`)
+  (or, if you're using PHP 5.3, that would be `$ mkdir 5.3` and `$ mv phprc 5.3/phprc`)
   
   Now, try running the curl command again. You should no longer see any errors.
 
-4. If you don't see any errors, it should have been installed correctly. Now try running it:
- > $ php composer.phar
+4. If you don't see any errors, it should have been installed correctly. Now try running it:  
+  `$ php composer.phar`
 5. By running the command above, you should see a list of green and grey items. Success! You've installed composer.
 6. I'll assume from here on our you can read the composer documentation and usage :)
 
