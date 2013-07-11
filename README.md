@@ -30,14 +30,13 @@ Step 2: Enable the Phar Extension
 -------------------------
 
 1. Create the folder ~/.php (`$ mkdir .php`)
-2. Create the folder ~/.php/5.4 (`$ mkdir .php/5.4`)
-3. Create the file ~./.php/5.4/phprc (`nano .php/5.4/phprc`)
-4. Enter this code into the file on separate lines
+3. Create the file ~./.php/phprc (`nano .php/phprc`)
+3. Enter this code into the file on separate lines
  > extension = phar.so<br />
  > suhosin.executor.include.whitelist = phar
 
-5. Save the file and exit (CTRL+O then CTRL+X)
-6. **If you've decided to run PHP 5.3 instead of PHP 5.4 change *5.4* to *5.3* in the path**
+4. Save the file and exit (CTRL+O then CTRL+X)
+5. **If you've decided to run PHP 5.3 instead of PHP 5.4 change *5.4* to *5.3* in the path**
 
 
 Step 3: Hurray!
@@ -54,7 +53,22 @@ Step 3: Hurray!
 
 2. Now you can run the following command in the directory you want to use Composer in (go to the directory first them run this command)
  > curl -s https://getcomposer.org/installer | php
-3. You should see some installation success messages; this is good!
+3. You should see some installation success messages; this is good! 
+  If you see the following error:
+> #!/usr/bin/env php
+> Some settings on your machine make Composer unable to work properly.
+> Make sure that you fix the issues listed below and run this script again:
+
+> The phar extension is missing.
+> Install it or recompile php without --disable-phar
+  
+  This means you're on a DH server that has a different set of expectations for phrc. To fix it:
+````
+  $ cd ~/.php
+  $ mkdir 5.4
+  $ mv phprc 5.4/phprc
+  ````
+
 4. If you don't see any errors, it should have been installed correctly. Now try running it:
  > $ php composer.phar
 5. By running the command above, you should see a list of green and grey items. Success! You've installed composer.
