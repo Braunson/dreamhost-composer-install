@@ -53,21 +53,25 @@ Step 3: Hurray!
 
 2. Now you can run the following command in the directory you want to use Composer in (go to the directory first them run this command)
  > curl -s https://getcomposer.org/installer | php
-3. You should see some installation success messages; this is good! 
+3. You should see some installation success messages; this is good!  
   If you see the following error:
-> #!/usr/bin/env php
-> Some settings on your machine make Composer unable to work properly.
-> Make sure that you fix the issues listed below and run this script again:
-
-> The phar extension is missing.
-> Install it or recompile php without --disable-phar
+  > \#!/usr/bin/env php  
+  > Some settings on your machine make Composer unable to work properly.  
+  > Make sure that you fix the issues listed below and run this script again:  
+  >  
+  > The phar extension is missing.  
+  > Install it or recompile php without --disable-phar  
   
   This means you're on a DH server that has a different set of expectations for phrc. To fix it:
-````
-  $ cd ~/.php
-  $ mkdir 5.4
-  $ mv phprc 5.4/phprc
   ````
+    $ cd ~/.php
+    $ mkdir 5.4
+    $ mv phprc 5.4/phprc
+    ````
+
+  (or, if you're using PHP 5.3, that would be `mkdir 5.3`)
+  
+  Now, try running the curl command again. You should no longer see any errors.
 
 4. If you don't see any errors, it should have been installed correctly. Now try running it:
  > $ php composer.phar
