@@ -22,7 +22,8 @@ Step 1: Running PHP 5.4 (or 5.3) in CLI (Command Line Interface)
   > export PATH=/usr/local/php54/bin:$PATH
 
 5. Save the file and exit (CTRL+O then CTRL+X)
-6. **If you've decided to run PHP 5.3 instead of PHP 5.4 change *php54* to *php53* in the path**
+6. You may need to logout and log back in
+7. **If you've decided to run PHP 5.3 instead of PHP 5.4 change *php54* to *php53* in the path**
 
 Step 2: Enable the Phar Extension
 -------------------------
