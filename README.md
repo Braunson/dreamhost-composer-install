@@ -28,7 +28,7 @@ Step 2: Enable the Phar Extension
 -------------------------
 
 1. Login via Putty or whatever flavor you like
-2. Navigate to ~/ (cd ~/)
+2. Navigate to ~/ (`$ cd ~/`)
 3. Create the folder ~/.php (`$ mkdir -p ~/.php/5.4`)
 4. Create the file ~./.php/5.4/phprc (`$ nano ~/.php/5.4/phprc`)
 5. Pop these jewels into the file on seperate lines
