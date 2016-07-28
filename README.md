@@ -1,6 +1,16 @@
 Installing Composer on a shared Dreamhost Server
 ==========================
 
+-----------------------
+
+# Update 7/28/2016 
+This guide hasn't been updated for some time. DreamHost now no longer supports PHP 5.2, 5.3, 5.4 and soon 5.5. They now support only PHP 5.6 and PHP 7. [You can read more about this here](https://help.dreamhost.com/hc/en-us/articles/215082337-What-versions-of-PHP-are-available-at-DreamHost-).
+
+That being said, I will update this guide for PHP 5.5 & 7 shortly.
+
+-----------------------
+
+
 Some people have had a hell of a time installing Composer on a shared DH account, well here's how I did it. 
 I'm going to assume you know what a shell user is and how to use basic terminal
 
