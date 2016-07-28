@@ -1,5 +1,7 @@
 Installing Composer on a shared Dreamhost Server
 ==========================
+Some people have had a hell of a time installing Composer on a shared DH account, well here's how I did it. 
+I'm going to assume you know what a shell user is and how to use basic terminal
 
 -----------------------
 
@@ -9,10 +11,6 @@ This guide hasn't been updated for some time. DreamHost now no longer supports P
 That being said, I will update this guide for PHP 5.5 & 7 shortly.
 
 -----------------------
-
-
-Some people have had a hell of a time installing Composer on a shared DH account, well here's how I did it. 
-I'm going to assume you know what a shell user is and how to use basic terminal
 
 Requirements
 -------------------------
