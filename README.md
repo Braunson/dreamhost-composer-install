@@ -39,8 +39,8 @@ Step 2: Enable the Phar Extension
 3. Create the folder `$ mkdir -p ~/.php/7.4`
 4. Create the file `$ nano ~/.php/7.4/phprc`
 5. Pop these jewels into the file on seperate lines
-    > extension = phar.so
-    > suhosin.executor.include.whitelist = phar
+    > extension = phar.so<br />
+    > suhosin.executor.include.whitelist = phar<br />
     > pcre.jit=0
 
     **NOTE:** The first line may or may not be needed, in my case PHP 7.4 on Dreamhost already had the Phar extension enabled.
@@ -54,15 +54,15 @@ Step 3: Installing Composer
   you run `$ php --version` and it should say that it's running PHP 7.4 CLI.
 
     It should look something like this:
-    > PHP 7.4.3 (cli) (built: Feb 21 2020 00:45:59) ( NTS )
-    > Copyright (c) The PHP Group
-    > Zend Engine v3.4.0, Copyright (c) Zend Technologies
+    > PHP 7.4.3 (cli) (built: Feb 21 2020 00:45:59) ( NTS )<br />
+    > Copyright (c) The PHP Group<br />
+    > Zend Engine v3.4.0, Copyright (c) Zend Technologies<br />
     >  with Zend OPcache v7.4.3, Copyright (c), by Zend Technologies
 
     If not, then you've messed up somewhere along the line.
 
 2. Now you can run the following command in the directory you want to use Composer in (go to the directory first them run this command)
-    > curl -sS https://getcomposer.org/installer | php
+    > curl -sS https://getcomposer.org/installer | php<br />
     > mv ~/.php/composer/composer.phar ~/.php/composer/composer
 
 3. You should see some installation success messages; this is good!
