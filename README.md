@@ -69,12 +69,12 @@ Step 3: Installing Composer
 
     If you see the following error:
 
-    > \#!/usr/bin/env php
-    > Some settings on your machine make Composer unable to work properly.
-    > Make sure that you fix the issues listed below and run this script again:
-    >
-    > The phar extension is missing.
-    > Install it or recompile php without --disable-phar
+    > \#!/usr/bin/env php<br />
+    > Some settings on your machine make Composer unable to work properly.<br />
+    > Make sure that you fix the issues listed below and run this script again:<br />
+    ><br />
+    > The phar extension is missing.<br />
+    > Install it or recompile php without --disable-phar<br />
 
     This means you're on a DH server that has a different set of expectations for phrc. To fix it:
 
